@@ -1,97 +1,3 @@
-// import React, { useEffect, useRef } from "react";
-// import { Card } from "antd";
-// import Chart from "chart.js/auto";
-// import styles from "./LineGraph2.module.css";
-
-// const LineGraph2 = ({ isOpen }) => {
-//   const lineChartRef = useRef(null);
-//   const doughnutChartRef = useRef(null);
-//   useEffect(() => {
-//     let lineChart;
-//     let doughnutChart;
-//     if (lineChartRef.current) {
-//       lineChart = new Chart(lineChartRef.current, {
-//         type: "line",
-//         data: {
-//           labels: [
-//             "Jan",
-//             "Feb",
-//             "Mar",
-//             "Apr",
-//             "May",
-//             "Jun",
-//             "Jul",
-//             "Aug",
-//             "Sep",
-//             "Oct",
-//             "Nov",
-//             "Dec",
-//           ],
-//           datasets: [
-//             {
-//               label: "Sales",
-//               data: [
-//                 100, 200, 150, 250, 300, 350, 123, 345, 567, 789, 132, 423,
-//               ],
-//               borderColor: "blue",
-//               borderWidth: 1,
-//             },
-//           ],
-//         },
-//       });
-//       if (isOpen) {
-//         document.body.style.marginRight = "200px";
-//       } else {
-//         document.body.style.marginRight = "0";
-//       }
-//     }
-//     if (doughnutChartRef.current) {
-//       doughnutChart = new Chart(doughnutChartRef.current, {
-//         type: "doughnut",
-//         data: {
-//           labels: [
-//             "Men's Clothing",
-//             "Women's Clothing",
-//             "Accessories",
-//             "Electronics",
-//           ],
-//           datasets: [
-//             {
-//               label: "Category",
-//               data: [25, 35, 20, 20],
-//               backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#4BC0C0"],
-//             },
-//           ],
-//         },
-//       });
-//     }
-//     return () => {
-//       if (lineChart) {
-//         lineChart.destroy();
-//       }
-//       if (doughnutChart) {
-//         doughnutChart.destroy();
-//       }
-//     };
-//   }, [isOpen]);
-//   return (
-//     <div className={styles.lineGraphContainer}>
-//       <div className={styles.cardContainer}>
-//         <Card className={styles.chartCard}>
-//           <div className={styles.chartTitle}>Line Graph</div>
-//           <canvas ref={lineChartRef}></canvas>
-//         </Card>
-//         <Card className={styles.chartCard}>
-//           <div className={styles.chartTitle}>Doughnut Graph</div>
-//           <canvas ref={doughnutChartRef}></canvas>
-//         </Card>
-//       </div>
-//     </div>
-//   );
-// };
-// export default LineGraph2;
-
-
 "use client";
 import React, { useEffect, useRef } from "react";
 import { Card } from "antd";
@@ -197,8 +103,6 @@ const LineGraph = ({ isOpen }) => {
           <div className={styles.chartTitle}>Doughnut Graph</div>
           <canvas ref={doughnutChartRef}></canvas>
         </Card>
-
-       
       </div>
     </div>
   );

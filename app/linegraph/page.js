@@ -102,10 +102,7 @@ const LineGraph = ({ isOpen }) => {
         <Card className={styles.chartCard}>
           <div className={styles.chartTitle}>Doughnut Graph</div>
           <canvas ref={doughnutChartRef}></canvas>
-         
         </Card>
-       
-        
       </div>
     </div>
   );

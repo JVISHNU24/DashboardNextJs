@@ -8,7 +8,8 @@ import LineGraph from "../linegraph/page";
 import Navbar2 from "../navbar2/page";
 import Sidebar3 from "../sidebar3/page";
 import Footer2 from "../footer2/page";
-const Layout3 = ({children}) => {
+import Sidebar from "../sidebar/page";
+const Layout4 = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -16,10 +17,9 @@ const Layout3 = ({children}) => {
   return (
     <html lang="en">
       <body>
-        <Navbar2 toggleSidebar={toggleSidebar} />
-        <Sidebar3 isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+        <Navbar toggleSidebar={toggleSidebar} />
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         <main className={`content ${isSidebarOpen ? "shiftRight" : ""}`}>
-          {/* <LineGraph isOpen={isSidebarOpen} /> */}
           {children}
         </main>
         <Footer2 />
@@ -27,4 +27,4 @@ const Layout3 = ({children}) => {
     </html>
   );
 };
-export default Layout3;
+export default Layout4;

@@ -1,4 +1,3 @@
-
 .sidebar {
   position: fixed;
   left: 0;
@@ -12,40 +11,31 @@
   margin-top: 64px;
   z-index: 1000;
 }
-
 .hidden {
   transform: translateX(-100%);
 }
-
 .menu {
   padding-top: 20px;
   background-color: #eeeeee;
 }
-
 .menuItem {
   margin-bottom: 10px;
   border: 2px;
-
 }
-
 .menuItem a {
   color: white;
-
 }
-
 .icon {
   margin-right: 10px;
-  font-size: 20px; 
+  font-size: 20px;
 }
-
 .toggleBtn {
   position: absolute;
   top: 20px;
   right: 10px;
   cursor: pointer;
-  font-size: 24px; 
+  font-size: 24px;
 }
-
 @media screen and (max-width: 768px) {
   .sidebar {
     width: 100%;

@@ -8,7 +8,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import Navbar3 from "../navbar3/page";
 const { Header } = Layout;
 const Navbar = ({ toggleSidebar, onLayoutChange }) => {
-  const router=useRouter();
+  const router = useRouter();
   const [showDropdown, setShowDropdown] = useState(false);
   const handleDropdownToggle = () => {
     setShowDropdown(!showDropdown);
@@ -36,7 +36,6 @@ const Navbar = ({ toggleSidebar, onLayoutChange }) => {
         <FaBars className={`mr-2 ${styles.menuIcon}`} onClick={toggleSidebar} />
         <span className={styles.title}>Dashboard</span>
       </div>
-      
       <div className={`${styles.navItems} `}>
         <FaBell className={` ${styles.icon} ${styles.marginLeft}`} />
         <FaEnvelope className={` ${styles.icon} ${styles.marginLeft}`} />

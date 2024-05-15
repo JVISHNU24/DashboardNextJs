@@ -35,7 +35,6 @@ const Navbar3 = ({ toggleSidebar, onLayoutChange }) => {
         <FaBars className={`mr-2 ${styles.menuIcon}`} onClick={toggleSidebar} />
         <span className={styles.title}>Dashboard</span>
       </div>
-      
       <div className={`${styles.navItems} `}>
         <FaBell className={` ${styles.icon} ${styles.marginLeft}`} />
         <FaEnvelope className={` ${styles.icon} ${styles.marginLeft}`} />
