@@ -1,0 +1,49 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #eeeeee;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  padding-top: 100px;
+}
+.hidden {
+  transform: translateX(-100%);
+}
+.menu {
+  padding-top: 20px;
+  background-color: #eeeeee;
+}
+.menuItem {
+  margin-bottom: 10px;
+  background-color: #eeeeee;
+}
+.menuItem a {
+  color: #000000;
+}
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.toggleBtn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
+}
